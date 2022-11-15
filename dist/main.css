@@ -6,5 +6,97 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss (1) ***!
   \*************************************************************************************************************/
 html, body {
-  background-color: #9999ff;
+  background-color: pink;
+}
+
+.doggies_n_cps_background {
+  background-color: rgba(255, 105, 180, 0.8);
+  width: 2000px;
+  height: 120px;
+  margin-top: -52%;
+  margin-left: -20%;
+}
+
+b {
+  color: white;
+  font-size: 24px;
+}
+
+.column {
+  margin-left: 35%;
+  margin-top: -4%;
+}
+
+img {
+  margin-top: 40%;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+img.click {
+  transition: 1s;
+  animation: floating2;
+  animation-duration: 0.5s;
+}
+
+.shop-container {
+  position: relative;
+  color: white;
+  width: 500px;
+  overflow-y: scroll;
+  height: 577.5px;
+  top: 90px;
+  left: 14%;
+}
+
+.shop-container::before {
+  position: absolute;
+  content: "X";
+  top: 0;
+  left: 0;
+  padding: 15px 30px;
+  transform: translateX(-100%);
+  z-index: 1000;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(255, 105, 180, 0.8);
+}
+
+.pad {
+  padding: 15px 30px;
+}
+
+.store-list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+@keyframes floating2 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
 }

@@ -1,9 +1,9 @@
 <template>
-    <img-modal v-if="active" @close="active=false" src="http://placekitten.com/800/600"></img-modal>
+    <img-modal v-if="active" @close="active=false" src="http://placekitten.com/800/1000"></img-modal>
 <button class="button is-primary" @click="active=true">Open Modal</button>
-<img-modal v-if="active2" @close="active2=false" src="https://placebear.com/800/600"></img-modal>
+<img-modal v-if="active2" @close="active2=false" src="https://placebear.com/800/1000"></img-modal>
 <button class="button is-primary" @click="active2=true">Open Modal</button>
-<img-modal v-if="active3" @close="active3=false" src="https://i.picsum.photos/id/479/800/600.jpg?hmac=BuwU0fup_BMW4m6Q_Sry_xOcCagSnhK0nk6_BiMkxrs"></img-modal>
+<img-modal v-if="active3" @close="active3=false" src="https://placebear.com/800/800"></img-modal>
 <button class="button is-primary" @click="active3=true">Open Modal</button>
     
 </template>
